@@ -126,7 +126,6 @@ html {
   --dropdown-tail: 5px;
   --dropdown-side: 14px;
 }
-
 .menu__root {
   position: relative;
   padding: 0 4px;
@@ -134,7 +133,6 @@ html {
   background: var(--menu-panel-bg);
   z-index: 1;
 }
-
 .menu__item,
 .menu__label {
   position: relative;
@@ -218,7 +216,6 @@ html {
   white-space: nowrap;
   border-radius: 0;
 }
-
 .menuButton__menuButton:not(.menuButton___disabled___12Gnp):focus,
 .menuButton__menuButton:not(.menuButton___disabled___12Gnp):hover {
   color: var(--common-accent-inversed);
@@ -236,4 +233,61 @@ html {
 }
 .menu__dropdown--disabled {
   display: none;
+}
+.toolbar__toolbar___3ngAs {
+  background: var(--menu-panel-toolbar-bg);
+  border-top: 1px solid var(--menu-panel-border);
+  display: flex;
+  overflow: hidden;
+}
+.toolbar__group___59y3T {
+  margin: 5px 0;
+  padding: 0 3px;
+  list-style: none;
+  display: flex;
+  flex: 0 0 auto;
+  border-right: 1px solid var(--menu-panel-border);
+}
+.toolbar__group___59y3T:last-child {
+  border: 0;
+}
+.toolbar__tool___2-wxk {
+  flex: 0 0 auto;
+  padding: 0;
+  margin: 0 2px;
+}
+.iconButton__button___16mKq::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 2px;
+  background: var(--menu-panel-hover);
+  opacity: 0;
+  content: "";
+}
+.iconButton__button___16mKq {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  opacity: 0.65;
+  color: var(--common-color);
+  transition: opacity 0.14s ease;
+  outline: none;
+}
+.iconButton__button___16mKq.iconButton__active___2_sVM::before,
+.iconButton__button___16mKq:hover:not(.iconButton__disabled___2XWyW)::before {
+  opacity: 0.15;
+}
+.symbols__icon___1gfwE {
+  position: relative;
+  vertical-align: top;
 }
