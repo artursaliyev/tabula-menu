@@ -1,0 +1,239 @@
+.theme-dark {
+  --accent: #1371f6;
+  --accent-rgb: 19, 113, 246;
+  --common-logo: hsla(0, 0%, 93.7%, 0.8);
+  --common-bg: #222;
+  --common-float-bg: rgba(64, 64, 64, 0.95);
+  --common-color: #fff;
+  --common-inversed-color: #000;
+  --common-shadow1: rgba(0, 0, 0, 0.3);
+  --common-shadow2: rgba(0, 0, 0, 0.2);
+  --common-divider: hsla(0, 0%, 100%, 0.05);
+  --outline-hover: rgba(19, 113, 246, 0.3);
+  --outline-hover: rgba(var(--accent-rgb), 0.3);
+  --outline-selected: rgba(19, 113, 246, 0.5);
+  --outline-selected: rgba(var(--accent-rgb), 0.5);
+  --selection-bg: rgba(19, 113, 246, 0.2);
+  --selection-bg: rgba(var(--accent-rgb), 0.2);
+  --selection-border: rgba(19, 113, 246, 0.4);
+  --selection-border: rgba(var(--accent-rgb), 0.4);
+  --node-bg: #383838;
+  --node-line: #383838;
+  --menu-bg: rgba(0, 0, 0, 0.8);
+  --menu-color: hsla(0, 0%, 100%, 0.75);
+  --menu-border: rgba(0, 0, 0, 0.05);
+  --menu-border: var(--common-divider);
+  --menu-divider: rgba(0, 0, 0, 0.05);
+  --menu-divider: var(--common-divider);
+  --menu-item-bg: #404040;
+  --menu-button-bg-hover: #4071f6;
+  --editor-divider: hsla(0, 0%, 100%, 0.05);
+  --drop-pointer-color: #377292;
+  --menu-panel-border: transparent;
+  --menu-panel-bg: rgba(34, 34, 34, 0.8);
+  --menu-panel-toolbar-bg: #404040;
+  --menu-panel-hover: hsla(0, 0%, 100%, 0.05);
+  --input-border: hsla(0, 0%, 100%, 0.05);
+  --input-focused-border: #1371f6;
+  --input-focused-border: var(--accent);
+  --input-focused-shadow: rgba(19, 113, 246, 0.2);
+  --input-focused-shadow: rgba(var(--accent-rgb), 0.2);
+  --input-background: rgba(0, 0, 0, 0.05);
+  --button-hover-background: hsla(0, 0%, 100%, 0.05);
+  --panel-bg: #222;
+  --panel-header-bg: #2c2c2c;
+  --panel-header-divider: rgba(0, 0, 0, 0.15);
+  --panel-aside-bg: #2c2c2c;
+  --panel-color: #f0f0f0;
+  --attach-overlay: hsla(0, 0%, 100%, 0.3);
+  --attach-hover: #75acfa;
+}
+:root {
+  --accent: #1371f6;
+  --accent-rgb: 19, 113, 246;
+  --font: Roboto, -apple-system, BlinkMacSystemFont, Roboto, Open Sans,
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --common-logo: #666;
+  --common-bg: #f8f8f8;
+  --common-float-bg: hsla(0, 0%, 100%, 0.95);
+  --common-color: #000;
+  --common-inversed-color: #fff;
+  --common-accent-inversed: #fff;
+  --common-tooltip: hsla(0, 0%, 100%, 0.8);
+  --common-tooltip-bg: #202020;
+  --common-shadow1: rgba(0, 0, 0, 0.15);
+  --common-shadow2: rgba(0, 0, 0, 0.1);
+  --common-divider: rgba(0, 0, 0, 0.05);
+  --outline-hover: rgba(19, 113, 246, 0.2);
+  --outline-hover: rgba(var(--accent-rgb), 0.2);
+  --outline-selected: #1371f6;
+  --outline-selected: var(--accent);
+  --selection-bg: rgba(19, 113, 246, 0.2);
+  --selection-bg: rgba(var(--accent-rgb), 0.2);
+  --selection-border: rgba(19, 113, 246, 0.4);
+  --selection-border: rgba(var(--accent-rgb), 0.4);
+  --node-bg: #fff;
+  --node-line: #ccc;
+  --group-color: #377293;
+  --group-rgb: 55, 114, 146;
+  --group-border: rgba(55, 114, 146, 0.3);
+  --group-border: rgba(var(--group-rgb), 0.3);
+  --group-border-selected: rgba(55, 114, 146, 0.5);
+  --group-border-selected: rgba(var(--group-rgb), 0.5);
+  --group-border-active: rgba(55, 114, 146, 0.6);
+  --group-border-active: rgba(var(--group-rgb), 0.6);
+  --menu-bg: hsla(0, 0%, 93.7%, 0.8);
+  --menu-color: #222;
+  --menu-border: rgba(0, 0, 0, 0.15);
+  --menu-divider: rgba(0, 0, 0, 0.05);
+  --menu-divider: var(--common-divider);
+  --menu-item-bg: #fff;
+  --menu-button-bg-hover: #4071f6;
+  --editor-border: rgba(0, 0, 0, 0.1);
+  --editor-divider: rgba(0, 0, 0, 0.1);
+  --drop-pointer-color: #377292;
+  --relation-line: #666;
+  --relation-handle: #ffe087;
+  --menu-panel-border: rgba(0, 0, 0, 0.05);
+  --menu-panel-border: var(--common-divider);
+  --menu-panel-bg: hsla(0, 0%, 96.1%, 0.8);
+  --menu-panel-toolbar-bg: hsla(0, 0%, 96.1%, 0.8);
+  --menu-panel-hover: rgba(0, 0, 0, 0.5);
+  --input-border: rgba(0, 0, 0, 0.05);
+  --input-focused-border: #1371f6;
+  --input-focused-border: var(--accent);
+  --input-focused-shadow: rgba(19, 113, 246, 0.2);
+  --input-focused-shadow: rgba(var(--accent-rgb), 0.2);
+  --input-background: hsla(0, 0%, 100%, 0.05);
+  --button-hover-background: rgba(0, 0, 0, 0.05);
+  --panel-bg: #fff;
+  --panel-header-bg: #fff;
+  --panel-aside-bg: #f5f5f5;
+  --panel-header-divider: rgba(0, 0, 0, 0.05);
+  --panel-color: #1a1a1a;
+  --attach-overlay: rgba(0, 0, 0, 0.3);
+  --attach-hover: #caddf7;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #f8f8f8;
+  background: var(--common-bg);
+}
+:root {
+  --dropdown-tail: 5px;
+  --dropdown-side: 14px;
+}
+
+.menu__root {
+  position: relative;
+  padding: 0 4px;
+  white-space: nowrap;
+  background: var(--menu-panel-bg);
+  z-index: 1;
+}
+
+.menu__item,
+.menu__label {
+  position: relative;
+}
+.menu__item {
+  font: 13px/25px var(--font);
+  color: var(--menu-color);
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.menu__item.menu___expanded .menu__label {
+  border-color: var(--menu-border);
+  background: var(--menu-item-bg);
+  box-shadow: 0 2px 2px var(--common-shadow1), 0 1px var(--common-shadow2);
+}
+.menu__label {
+  padding: 4px 8px 1px;
+  border: 1px solid transparent;
+  border-top-color: transparent;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: transparent;
+  border-top: 0;
+  border-top-color: currentcolor;
+  border-bottom: 0;
+  border-bottom-color: currentcolor;
+  cursor: default;
+}
+.menu__item.menu___expanded .menu__label::after {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid var(--menu-item-bg);
+  z-index: 1;
+  content: "";
+}
+.menu__dropdown {
+  background: linear-gradient(var(--menu-item-bg), var(--common-float-bg) 38px);
+  border: 1px solid var(--menu-border);
+  border-radius: 0 0 3px 3px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 3px 0;
+  box-shadow: 0 2px 2px var(--common-shadow1), 0 1px var(--common-shadow2);
+}
+.menu__group:first-child {
+  border: 0;
+}
+.menu__group {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 0;
+  margin-bottom: -1px;
+  border-top: 1px solid var(--menu-divider);
+}
+.menuButton__menuButton {
+  position: relative;
+  display: flex;
+  margin: 0 -1px;
+  padding: 0 10px 0 32px;
+  background: none;
+  border: 0;
+  font: 13px/25px -apple-system, BlinkMacSystemFont, Roboto, Open Sans,
+    Helvetica Neue, sans-serif;
+  color: var(--menu-color);
+  text-align: left;
+  -webkit-font-smoothing: subpixel-antialiased;
+  outline: none;
+  cursor: default;
+  white-space: nowrap;
+  border-radius: 0;
+}
+
+.menuButton__menuButton:not(.menuButton___disabled___12Gnp):focus,
+.menuButton__menuButton:not(.menuButton___disabled___12Gnp):hover {
+  color: var(--common-accent-inversed);
+  background: var(--menu-button-bg-hover);
+}
+.menuButton__text {
+  flex: 1 1 auto;
+  margin-right: 16px;
+}
+.menuButton__kbd {
+  flex: 0 0 auto;
+  color: inherit;
+  opacity: 0.5;
+  font: 13px/25px var(--font);
+}
+.menu__dropdown--disabled {
+  display: none;
+}
